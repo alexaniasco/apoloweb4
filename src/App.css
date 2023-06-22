@@ -1,0 +1,760 @@
+#root {
+  width: 100%;
+  box-sizing: border-box !important;
+  background-color: rgb(233, 233, 233);
+
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 90% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .preciosplanes1 {
+    display: none !important;
+  }
+
+  .preciosplanes {
+    display: block !important;
+  }
+
+  .preciosplanes2 {
+    height: 100%;
+    margin-right: 0 !important;
+  }
+
+  .porque_grid {
+    display: inline !important;
+  }
+
+  .porque_flex {
+    display: inline !important;
+  }
+
+  .porque_text {
+    width: 100% !important;
+  }
+
+  .porque_text p {
+    width: 100% !important;
+    font-size: smaller;
+    font-weight: 400;
+  }
+
+  .porque_text button {
+    width: 100% !important;
+  }
+  .serviciosDos{
+    margin-bottom: 80px;
+  }
+}
+
+
+
+@media (max-width: 1000px) {
+
+  .serviciosDosText p {
+    margin: 20px 4px !important;
+  }
+
+  .serviciosDosText {
+    width: 100% !important;
+
+  }
+
+  .serviciosDosText button {
+    width: 100%;
+
+  }
+  .titulo p{
+    margin-left: 20px !important;
+    font-weight: 400;
+    font-size: smaller;
+  }
+
+  .serviciosDosHead {
+    display: block !important;
+   margin: 0 40px !important;
+  }
+ 
+  .serviciosDosImagen{
+    width: 80% !important;
+  }
+  .servidiosDosImagenCont {
+    margin: 80px 40px !important;
+  }
+.containerr{
+  width: 100vw !important;
+}
+
+.container_main{
+  overflow-x: visible !important;
+}
+  .containerr h1 {
+    margin-left: 20px !important;
+  }
+  .img_landing{
+    width: 100vw !important;
+  }
+.img_landing img{
+  width: 260px;
+  scale: 2.3;
+  top: 600px !important;
+  left: -60px !important;
+}
+  .porque_title {
+    margin: 40px 20px !important;
+  }
+
+  .table_cont{
+    margin: 40px 10px !important;
+  }
+
+  .porque_ex {
+    margin: 0 20px;
+  }
+
+  .porque_flex {
+    margin: 20px 20px !important;
+  }
+
+  .porque_card {
+    margin: 40px 4px !important;
+    padding: 8px 0px;
+  }
+
+  .preguntas_title{
+    margin: 100px 20px 20px 20px !important;
+  }
+
+  .preguntas_group{
+    margin: 0px 20px;
+  }
+  .preguntas_main{
+    padding: 100px 0;
+    height: max-content !important;
+  }
+  .form{
+    width: 100% !important;
+    margin: 0px 0px !important;
+    border-radius: 0 !important;
+    height: 100% !important;
+    padding: 50% 20px !important;
+  }
+
+  .form_butons{
+    width: 100% !important;
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+  .formcontacto{
+    display: none;
+  }
+  .preguntas_group{
+    display: inline !important;
+    width: 98%;
+    margin: 0 20px !important;
+  }
+  .preguntas_botones button {
+    width: 100% !important;
+    color: rgb(27, 27, 27);
+    font-size: smaller;
+    font-weight: 400;
+  }
+  .preguntas_botones{
+    margin-bottom: 40px;
+  }
+  .banner_main{
+    top: 0 !important;
+  height: 160px !important;
+  display: block !important;
+  }
+  .idea{
+    margin: 0 20px !important;
+    font-size: smaller;
+    font-weight: 400;
+    
+
+  }
+  .preciosplanes2{
+    flex-direction: column;
+    
+  }
+  .preciosplanes{
+    height: 100% !important;
+    padding: 20px 0;
+  }
+  .card1{
+    margin: 20px 0;
+  }
+  .btn-grid{
+    top: 10px !important;
+    right: 10px !important;
+  }
+}
+
+
+.container_main {
+  width: 100%;
+
+  overflow-x: hidden !important;
+  background: linear-gradient(45deg,
+      rgba(252, 36, 36, 0.938),
+      rgba(9, 9, 240, 0.993),
+      rgba(25, 160, 25, 0.973));
+
+  background-size: 200%;
+  animation: cambiar 20s ease-in infinite;
+}
+
+.containerr {
+
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.containerr img {
+  position: absolute;
+
+  top: -80px;
+  left: 0;
+
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.cere {
+  top: 0;
+}
+
+
+
+.containerr h1 {
+  font-size: 3.875rem;
+  font-family: "Manrope", sans-serif;
+  margin-left: 60px;
+  width: 60vw;
+  text-overflow: clip;
+  z-index: 2;
+}
+
+.maquina {
+  position: relative;
+
+  font-size: large;
+  margin-left: 60px;
+  margin-top: 0;
+}
+
+.titulo {
+  z-index: 2;
+  color: white;
+}
+
+
+
+/* PRECIOS------------------------------------------- */
+
+.preciosn {
+  position: relative;
+  z-index: 5;
+  background-image: url("../public/preciosimg.png");
+  background-size: cover;
+}
+
+.preciosplanes {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+
+}
+
+.preciosplanes1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  height: 100vh;
+  margin-left: 60px;
+  font-weight: 400;
+}
+
+.preciosplanesimg {
+  width: 100%;
+}
+
+.preciosplanes2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+}
+
+.card1 {
+  height: 400px;
+  background-color: #4041450a;
+  width: 240px;
+  border-radius: 1rem;
+
+}
+
+.card2 {
+  height: 440px;
+
+  background-color: #55407f9a;
+  width: 240px;
+  border-radius: 1rem;
+  backdrop-filter: blur(8px);
+}
+
+
+.preciosplanestext1 p {
+  margin: 0;
+  font-size: 32px;
+  color: #EF43CF;
+}
+
+.preciosplanestext p {
+  margin: 0;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.preciosplanestext {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card_head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  margin-top: 40px;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid rgba(245, 245, 245, 0.062);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.card2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+
+}
+
+.card1 button {
+
+  border-radius: 2rem;
+  color: wheat;
+  background-color: #3848F1;
+}
+
+.btn-card1 {
+  align-self: flex-end;
+
+}
+
+.card2 button {
+  background-color: #EF43CF;
+  color: wheat;
+  border-radius: 2rem;
+}
+
+.fueguito {
+  position: absolute;
+  bottom: -20px;
+  right: -60px;
+}
+
+.btn-grid {
+  border-radius: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  background-color: rgba(255, 255, 255, 0.151);
+}
+
+
+.table_cont {
+  border: 1px solid rgba(245, 245, 245, 0.034);
+  background-color: #301c6a67;
+
+  height: 80vh;
+  margin: 0 40px;
+  border-radius: 2rem;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+
+}
+
+table {
+  width: 90%;
+}
+
+th {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.349) !important;
+}
+
+.tr_ultimo th {
+  border-bottom: 1px solid rgba(245, 222, 179, 0) !important;
+}
+
+
+/* SERVICIOS DOS-------------------------------------------------- */
+
+.serviciosDos {
+  background-color: rgb(231, 231, 231);
+
+  background-size: cover;
+  background-blend-mode: darken;
+
+  min-height: 100vh;
+
+  font-family: 'Kanit', sans-serif;
+  ;
+}
+
+.serviciosDosHead {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.servidiosDosImagenCont {
+  display: flex;
+  justify-content: center;
+  margin-right: 80px;
+}
+
+.serviciosDosImagen {
+  width: 60%;
+
+  object-fit: cover;
+}
+
+.serviciosDosText {
+  text-align: start;
+  width: 70%;
+
+  color: rgb(41, 41, 41);
+}
+
+.serviciosDosAbajo {
+  display: flex;
+  color: black;
+  margin-top: 40px;
+  margin-left: 80px;
+  margin-right: 80px;
+
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+
+/* PORQUE.------------------------ */
+
+.porque_main {
+  background-color: rgb(233, 233, 233);
+
+  background-size: cover;
+  background-size: 170%;
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  background-position-y: -420px;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(41, 41, 41);
+  position: relative;
+  z-index: 5;
+}
+
+.porque_title {
+  font-family: 'Kanit', sans-serif;
+  margin-left: 60px;
+}
+
+.porque_flex {
+  display: flex;
+
+  margin: 0 60px;
+}
+
+.porque_text {
+  margin-top: 40px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.porque_text p {
+  width: 90%;
+}
+
+.porque_text button {
+  color: white;
+  width: 90%;
+  border-radius: 0;
+  height: 60px;
+  background: linear-gradient(45deg,
+      rgba(252, 36, 36, 0.938),
+      rgba(9, 9, 240, 0.993),
+      rgba(25, 160, 25, 0.973));
+  filter: brightness(1.2);
+  filter: opacity(80%);
+  background-size: 200%;
+  animation: cambiar 20s ease-in infinite;
+
+}
+
+.porque_grid {
+  width: 100%;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 8px;
+}
+
+.porque_card {
+  background-color: rgba(197, 204, 206, 0.658);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.porque_card h4 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.porque_card p {
+  width: 70%;
+  margin-left: 110px;
+  font-size: small;
+
+}
+
+.porque_card img {
+  position: absolute;
+  bottom: -16px;
+  left: -20px;
+}
+
+
+/* PREGUNTAS---------------------------------------- */
+
+.preguntas_main {
+  background-color: rgb(233, 233, 233);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.preguntas_main h2 {
+  text-align: start;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 600;
+
+}
+
+.preguntas_botones {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.preguntas_botones button {
+  text-align: start;
+  width: 110%;
+  background-color: rgba(245, 245, 245, 0.548);
+  border: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.preguntas_group img {
+
+  width: 50%;
+  margin-left: 100px;
+  object-fit: cover;
+}
+
+.preguntas_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+}
+
+/* BANNER--------------------------------------------------- */
+
+.banner_main {
+  color: whitesmoke;
+  height: 80px;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  background: linear-gradient(45deg,
+      rgba(252, 36, 36, 0.938),
+      rgba(9, 9, 240, 0.993),
+      rgba(25, 160, 25, 0.973));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-size: 200%;
+  animation: cambiar 20s ease-in infinite;
+}
+
+/* Futer ---------------------------------------- */
+
+
+.futer_main {
+
+  background-image: url("/public/footerfondo.svg");
+  background-blend-mode: luminosity;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+.form {
+  padding: 60px ;
+  background-color: #acaaaa69;
+  padding: 20px;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 40px 80px;
+  position: relative;
+
+}
+
+.formcontacto {
+  position: absolute;
+  top: -100px;
+  left: -120px;
+  opacity: 90%;
+}
+
+.form_arriba_label {
+  display: flex;
+  position: absolute;
+  top: -16px;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 999;
+}
+
+.form_arriba label {
+
+
+  border-radius: 1rem;
+
+
+}
+
+.form_arriba {
+  display: flex;
+  width: 100%;
+  position: relative;
+  gap: 1%;
+}
+
+.form_arriba input {
+  height: 50px !important;
+  color: white;
+  width: 100%;
+  background-color: #40414556;
+  border: 1px solid rgba(245, 245, 245, 0.199);
+}
+
+.form_arriba input:focus {
+  outline: none;
+}
+
+.form_butons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px 1%;
+}
+
+.form_butons button {
+  background-color: #40414593 !important;
+  border: 1px solid rgba(245, 245, 245, 0.158);
+
+
+}
+
+.form textarea {
+  background-color: #40414560;
+  color: whitesmoke;
+  resize: none;
+  height: 80px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form textarea:focus {
+  outline: none;
+}
+
+.form input {
+  height: 38px;
+  border-radius: 4px;
+
+}
+
+.form button {
+  background-color: rgba(25, 160, 25, 0.651);
+  color: whitesmoke;
+}
+
+.futer_redes {
+  text-align: center;
+}
