@@ -22,7 +22,7 @@ function App() {
 
       if (scrollTop > 0) {
         setNavbarColor("#F5F4F4");
-        setTextColor("black");
+        setTextColor("#252525");
         setSombra(
           " 0px 2px 4px rgba(0, 0, 0, 0.2)"
         ); /* Cambia a tu color deseado */
@@ -101,19 +101,19 @@ function App() {
             {text !== "" ? <p className="maquina">{text}</p> : <p> </p>}
           </div>
           <div className="img_landing">
-            <img src="/img1.png" className="objet" data-value="-2" alt="" />
-            <img src="/img2.png" className="objet" data-value="6" alt="" />
-            <img src="/img3.png" className="objet" data-value="4" alt="" />
-            <img src="/img4.png" className="objet" data-value="-6" alt="" />
-            <img src="/img5.png" className="objet" data-value="8" alt="" />
-            <img src="/img6.png" className="objet" data-value="-4" alt="" />
-            <img src="/img7.png" className="objet cere" data-value="5" alt="" />
+            <img src="/img1.svg" className="objet" data-value="-2" alt="" />
+            <img src="/img2.svg" className="objet" data-value="6" alt="" />
+            <img src="/img3.svg" className="objet" data-value="4" alt="" />
+            <img src="/img4.svg" className="objet" data-value="-6" alt="" />
+            <img src="/img5.svg" className="objet" data-value="8" alt="" />
+            <img src="/img6.svg" className="objet" data-value="-4" alt="" />
+            <img  src="/img7.svg" className="objet cere" data-value="5" alt="" />
           </div>
         </div>
       </div>
+      <ServiciosDos></ServiciosDos>
       <Porque></Porque>
       <Planes></Planes>
-      <ServiciosDos></ServiciosDos>
       <Preguntas></Preguntas>
       <Futer></Futer>
     </>

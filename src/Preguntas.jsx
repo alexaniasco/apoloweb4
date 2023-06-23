@@ -13,7 +13,7 @@ export const Preguntas = () => {
           <button>Por que ApoloWeb es diferente a otras propuestas?</button>
           <button>Que es ApoloWeb Evolution y porqué financia proyectos?</button>
         </div>
-        <img src="/preguntas.png" alt="" />
+        <img src="/preguntas.svg" alt="" />
       </div>
       <Banner></Banner>
     </div>

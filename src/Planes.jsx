@@ -60,7 +60,7 @@ export const Planes = () => {
                             Para emprendedores y negocios en crecimiento que buscan llevar su presencia en línea al siguiente nivel.
                         </p>
                         <button  >¡Empieza ahora!</button>
-                        <img className="fueguito" src="/fire.png" alt="" />
+                        <img className="fueguito" src="/fire.svg" alt="" />
                     </div>
                     <div className="card1 card3" >
 

@@ -107,12 +107,18 @@ nav {
   }
 }
 
-
+.serviciosDosText p {
+  font-family: 'Kanit', sans-serif;
+}
+.p2{
+  font-family: "Manrope" !important;
+}
 
 @media (max-width: 1000px) {
   nav{
     flex-direction: column;
     width: 100%;
+    display: none;
   }
 
   .serviciosDosText p {
@@ -140,7 +146,7 @@ nav {
   }
  
   .serviciosDosImagen{
-    width: 80% !important;
+    width: 120% !important;
   }
   .servidiosDosImagenCont {
     margin: 80px 40px !important;
@@ -221,6 +227,7 @@ nav {
     color: rgb(27, 27, 27);
     font-size: smaller;
     font-weight: 400;
+    
   }
   .preguntas_botones{
     margin-bottom: 40px;
@@ -285,11 +292,13 @@ nav {
   left: 0;
   object-fit: contain;
   z-index: 0;
+  
 }
 
 
 .cere {
-  top: 0;
+  top: 120px !important;
+  left: 0px !important;
 }
 
 
@@ -322,7 +331,7 @@ nav {
 
 .preciosn {
   position: relative;
-  z-index: 5;
+  z-index: 999;
   background-image: url("../public/preciosimg.png");
   background-size: cover;
 }
@@ -373,6 +382,19 @@ nav {
   backdrop-filter: blur(8px);
 }
 
+.card2 p {
+  margin-top: 0 !important;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.card1 p {
+  margin-top: 0 !important;
+  line-height: 1.4;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 
 .preciosplanestext1 p {
   margin: 0;
@@ -383,7 +405,7 @@ nav {
 
 .preciosplanestext p {
   margin: 0;
-  font-size: 12px;
+  font-size: 1.1rem;
   color: #ffffff;
 }
 
@@ -447,6 +469,7 @@ nav {
   position: absolute;
   bottom: -20px;
   right: -60px;
+  max-width: 130px;
 }
 
 .btn-grid {
@@ -495,6 +518,8 @@ th {
   min-height: 100vh;
 
   font-family: 'Kanit', sans-serif;
+  position: relative;
+  z-index: 11;
   ;
 }
 
@@ -513,9 +538,24 @@ th {
 }
 
 .serviciosDosImagen {
-  width: 60%;
+  width: 100%;
 
   object-fit: cover;
+}
+@keyframes flotar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#pc {
+  animation: flotar 2s ease-in-out infinite;
 }
 
 .serviciosDosText {
@@ -552,15 +592,17 @@ th {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: rgb(41, 41, 41);
+  color: rgb(20, 20, 20);
   position: relative;
   z-index: 5;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
+
 }
 
 .porque_title {
   font-family: 'Kanit', sans-serif;
   margin-left: 60px;
+  color: rgb(41, 41, 41);
 }
 
 .porque_flex {
@@ -571,11 +613,11 @@ th {
 
 .porque_text {
   margin-top: 40px;
-  width: 35%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 400;
+ 
 }
 
 .porque_text p {
@@ -620,14 +662,16 @@ th {
 .porque_card p {
   width: 70%;
   margin-left: 110px;
-  font-size: small;
+  font-size: 0.8rem;
+  font-weight: 400 !important;
 
 }
 
 .porque_card img {
   position: absolute;
   bottom: -16px;
-  left: -20px;
+  left: -50px;
+  max-width: 180px;
 }
 
 
@@ -662,7 +706,7 @@ th {
   background-color: rgba(245, 245, 245, 0.548);
   border: 1px solid rgba(0, 0, 0, 0.164);
   font-weight: 400;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
 
 .preguntas_group img {
@@ -670,12 +714,14 @@ th {
   width: 50%;
   margin-left: 100px;
   object-fit: cover;
+  animation: flotar 2s ease-in-out infinite;
 }
 
 .preguntas_group {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  margin: 0 60px;
 
 }
 
@@ -709,6 +755,8 @@ th {
   display: flex;
   align-items: center;
   min-height: 100vh;
+  position: relative;
+  z-index: 999;
 
 }
 
@@ -727,9 +775,10 @@ th {
 
 .formcontacto {
   position: absolute;
-  top: -100px;
+  top: -120px;
   left: -120px;
-  opacity: 90%;
+  opacity: 100%;
+  max-width: 500px;
 }
 
 .form_arriba_label {

@@ -23,25 +23,25 @@ export const Porque = () => {
                         <h4>Redes y planeamiento</h4>
                         <p> Maximiza tu presencia en línea y convierte visitantes en clientes leales con una estrategia acorde a tu publico.</p>
                         
-                        <img src="/p1.png" alt="" />
+                        <img src="/p1.svg" alt="" />
                     </div>
                     <div className='porque_card'>
                         <h4>Posicionamiento en Google
                         </h4>
                         <p>Aumenta la visibilidad de tu página web. Destaca en los resultados de búsqueda y atrae a más clientes.</p>
-                        <img src="/p2.png" alt="" />
+                        <img src="/p2.svg" alt="" />
                     </div>
                     <div className='porque_card'>
                         <h4>Mantenimiento y optimizacion.
                         </h4>
                         <p>Las tecnologias avanzan constantemente. No te quedes atras! Mejora su rendimiento, velocidad y seguridad.</p>
-                        <img src="/p3.png" alt="" />
+                        <img src="/p3.svg" alt="" />
                     </div>
                     <div className='porque_card'>
                         <h4>Adaptacion a todo dispositivo
                         </h4>
                         <p>Haz que tu página web se adapte a todos los dispositivos. Brinda una experiencia perfecta a tus usuarios en computadoras, tablets y smartphones.</p>
-                        <img src="/p4.png" alt="" />
+                        <img src="/p4.svg" alt="" />
                     </div>
                 </div>
             </div>
