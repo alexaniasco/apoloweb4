@@ -10,6 +10,38 @@ import { Futer } from "./Futer";
 
 function App() {
 
+  
+  const [navbarColor, setNavbarColor] = useState("transparent");
+  const [textColor, setTextColor] = useState("white");
+  const [sombra, setSombra] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > 0) {
+        setNavbarColor("#F5F4F4");
+        setTextColor("black");
+        setSombra(
+          " 0px 2px 4px rgba(0, 0, 0, 0.2)"
+        ); /* Cambia a tu color deseado */
+      } else {
+        setNavbarColor("transparent");
+        setTextColor("white");
+        setSombra(""); /* Vuelve al color de fondo inicial */
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
 
@@ -44,6 +76,24 @@ function App() {
 
   return (
     <>
+       <nav style={{ backgroundColor: navbarColor, boxShadow: sombra}}>
+        <div className="logo" style={{ color: textColor }}>
+        </div>
+        <div className="menu" style={{ color: textColor }}>
+        <a style={{ color: textColor }} href="#uno">  <li>Tu sitio</li></a>
+          <li>Blog</li>
+          <a  style={{ color: textColor }}href="#dos"><li>Planes</li></a>
+       <a style={{ color: textColor }} href="#tres">   <li>Nosotros</li></a>
+         <a style={{ color: textColor }} href="#cuatro"> <li>¿Por que?</li></a>
+       
+    <a style={{ color: textColor }} href="#cinco">
+          <button
+            style={{ color: textColor, border: `1px solid ${textColor}` }}
+          >
+            Contacto
+          </button></a>
+        </div>
+      </nav> 
       <div className="container_main">
         <div className="containerr">
           <div className="titulo">

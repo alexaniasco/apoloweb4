@@ -9,7 +9,7 @@ export const Planes = () => {
 
 
     return (
-        <div className="preciosn">
+        <div className="preciosn" id='dos'>
             <div className="preciosplanes">
                 <div className="preciosplanes1">
                     <div className="preciosplanestext1">

@@ -2,7 +2,7 @@ import React from 'react'
 
 export const ServiciosDos = () => {
     return (
-        <div className='serviciosDos'>
+        <div className='serviciosDos' id='tres'>
             <div className='serviciosDosHead'>
                 <div className='serviciosDosText'>
                     <p style={{ fontSize: "52px", textAlign: "start", fontWeight: "700", margin: "0" }}>Apologia del exito en la  Web</p>

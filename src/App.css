@@ -5,6 +5,46 @@
 
 
 }
+
+
+nav {
+  position: fixed;
+  transition: background-color 0.6s ease;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  height: 80px;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 999;
+ 
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu li {
+  font-size: 16px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.menu button {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px white solid;
+}
+
+.logo {
+  width: 100%;
+  margin-left: 34px;
+}
+
 .porque_ex{
   margin-left:60px ;
 }
@@ -70,6 +110,10 @@
 
 
 @media (max-width: 1000px) {
+  nav{
+    flex-direction: column;
+    width: 100%;
+  }
 
   .serviciosDosText p {
     margin: 20px 4px !important;
@@ -237,10 +281,9 @@
 .containerr img {
   position: absolute;
 
-  top: -80px;
+  top: -10px;
   left: 0;
-
-  object-fit: cover;
+  object-fit: contain;
   z-index: 0;
 }
 
@@ -287,7 +330,7 @@
 .preciosplanes {
   height: 100vh;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 30% 70%;
   align-items: center;
 
 }
@@ -333,8 +376,9 @@
 
 .preciosplanestext1 p {
   margin: 0;
-  font-size: 32px;
+  font-size: 40px;
   color: #EF43CF;
+  font-family: 'Kanit', sans-serif;
 }
 
 .preciosplanestext p {
@@ -511,6 +555,7 @@ th {
   color: rgb(41, 41, 41);
   position: relative;
   z-index: 5;
+  margin-bottom: 80px;
 }
 
 .porque_title {
@@ -530,7 +575,7 @@ th {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .porque_text p {
@@ -595,7 +640,7 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .preguntas_main h2 {
@@ -616,6 +661,8 @@ th {
   width: 110%;
   background-color: rgba(245, 245, 245, 0.548);
   border: 1px solid rgba(0, 0, 0, 0.164);
+  font-weight: 400;
+  font-family: 'Kanit', sans-serif;
 }
 
 .preguntas_group img {
@@ -666,9 +713,9 @@ th {
 }
 
 .form {
-  padding: 60px ;
+
   background-color: #acaaaa69;
-  padding: 20px;
+  padding: 60px;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;

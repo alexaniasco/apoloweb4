@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Porque = () => {
     return (
-        <div className='porque_main'>
+        <div className='porque_main' id='uno'>
             <div>
                 <h1 className='porque_title' style={{ fontSize: "52px" }}>Tener tu sitio en la web</h1>
                 <h4 className='porque_ex' style={{ fontSize: "22px", fontWeight: "400" }}>≠ tener éxito en la web.</h4>

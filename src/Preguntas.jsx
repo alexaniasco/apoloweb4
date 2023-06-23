@@ -3,7 +3,7 @@ import { Banner } from './Banner'
 
 export const Preguntas = () => {
   return (
-    <div className='preguntas_main'>
+    <div className='preguntas_main' id='cuatro'>
       <h2 className='preguntas_title' style={{ fontSize: "40px", color: "#511D9A" }}>Las excusas de hoy son el futuro de mañana.</h2>
       <div className='preguntas_group'>
         <div className='preguntas_botones'>

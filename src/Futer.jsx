@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Futer = () => {
   return (
-    <div className='futer_main' style={{ color: "whitesmoke" }}>
+    <div id='cinco' className='futer_main' style={{ color: "whitesmoke" }}>
 
       <div className='form'>
         <img src='/formtit.svg' className='formcontacto' />
