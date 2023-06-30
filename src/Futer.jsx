@@ -5,7 +5,7 @@ export const Futer = () => {
     <div id='cinco' className='futer_main' style={{ color: "whitesmoke" }}>
 
       <div className='form'>
-        <img src='/formtit.svg' className='formcontacto' />
+     
         <div className="form_arriba">
           <div className='form_arriba_label'> <label>Nombre</label>
             <label>Email</label></div>

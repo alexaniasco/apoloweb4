@@ -1,24 +1,20 @@
 #root {
   width: 100%;
   box-sizing: border-box !important;
-  background-color: rgb(233, 233, 233);
-
-
+  background-color: rgb(255, 255, 255);
 }
 
-
 nav {
+  display: flex;
   position: fixed;
   transition: background-color 0.6s ease;
   top: 0;
   left: 0;
-  display: flex;
   width: 100vw;
   height: 80px;
   align-items: center;
   justify-content: space-evenly;
   z-index: 999;
-
 }
 
 .menu {
@@ -43,10 +39,6 @@ nav {
 .logo {
   width: 100%;
   margin-left: 34px;
-}
-
-.porque_ex {
-  margin-left: 60px;
 }
 
 * {
@@ -109,11 +101,8 @@ nav {
 }
 
 .serviciosDosText p {
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
 }
-
-
-
 
 @media (max-width: 1000px) {
   nav {
@@ -128,12 +117,10 @@ nav {
 
   .serviciosDosText {
     width: 100% !important;
-
   }
 
   .serviciosDosText button {
     width: 100%;
-
   }
 
   .titulo p {
@@ -240,7 +227,6 @@ nav {
     color: rgb(27, 27, 27);
     font-size: smaller;
     font-weight: 400;
-
   }
 
   .preguntas_botones {
@@ -255,15 +241,11 @@ nav {
 
   .idea {
     margin: 0 20px !important;
-    font-size: smaller;
-    font-weight: 400;
-
-
+  
   }
 
   .preciosplanes2 {
     flex-direction: column;
-
   }
 
   .preciosplanes {
@@ -281,22 +263,25 @@ nav {
   }
 }
 
-
 .container_main {
   width: 100%;
 
   overflow-x: hidden !important;
-  background: linear-gradient(45deg,
-      rgba(252, 36, 36, 0.938),
-      rgba(9, 9, 240, 0.993),
-      rgba(25, 160, 25, 0.973));
+  overflow-y: hidden !important;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
 
   background-size: 200%;
   animation: cambiar 20s ease-in infinite;
+  position: relative;
+  z-index: 3  ;
 }
 
 .containerr {
-
   height: 100vh;
   width: 100%;
   display: flex;
@@ -312,21 +297,18 @@ nav {
   left: 0;
   object-fit: contain;
   z-index: 0;
-
 }
 
-
 .cere {
+  
   top: 120px !important;
   left: 0px !important;
 }
 
-
-
 .containerr h1 {
   font-size: 3.875rem;
   font-family: "Manrope", sans-serif;
-  margin-left: 60px;
+  margin-left: 100px;
   width: 60vw;
   text-overflow: clip;
   z-index: 2;
@@ -334,9 +316,9 @@ nav {
 
 .maquina {
   position: relative;
-
-  font-size: large;
-  margin-left: 60px;
+font-weight: 100 !important;
+  font-size: 1rem;
+  margin-left: 100px;
   margin-top: 0;
 }
 
@@ -345,7 +327,9 @@ nav {
   color: white;
 }
 
-
+.titulo h1{
+  margin-bottom: 16px;
+}
 
 /* PRECIOS------------------------------------------- */
 
@@ -361,7 +345,6 @@ nav {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
-
 }
 
 .preciosplanes1 {
@@ -370,7 +353,7 @@ nav {
   justify-content: space-evenly;
   align-items: start;
   height: 100vh;
-  margin-left: 60px;
+  margin-left: 100px;
   font-weight: 400;
 }
 
@@ -382,7 +365,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 60px;
+  margin-right: 100px;
 }
 
 .card1 {
@@ -390,7 +373,6 @@ nav {
   background-color: #4041450a;
   width: 240px;
   border-radius: 1rem;
-
 }
 
 .card2 {
@@ -416,24 +398,26 @@ nav {
   font-weight: 400;
 }
 
-
 .preciosplanestext1 p {
   margin: 0;
-  font-size: 40px;
-  color: #EF43CF;
-  font-family: 'Kanit', sans-serif;
+  font-size: 30px;
+  color: #ef43cf;
+  font-family: "Kanit", sans-serif;
 }
 
 .preciosplanestext p {
   margin: 0;
   font-size: 1.1rem;
   color: #ffffff;
+  font-weight: 300 !important;
+  font-size: small !important;
 }
 
 .preciosplanestext {
   display: flex;
   flex-direction: column;
   align-items: start;
+  
 }
 
 .card_head {
@@ -441,7 +425,7 @@ nav {
   justify-content: center;
   align-items: center;
   font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: white;
   margin-top: 40px;
 }
@@ -454,7 +438,6 @@ nav {
   justify-content: space-evenly;
   border: 1px solid rgba(245, 245, 245, 0.062);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-
 }
 
 .card2 {
@@ -465,23 +448,20 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-
 }
 
 .card1 button {
-
   border-radius: 2rem;
   color: wheat;
-  background-color: #3848F1;
+  background-color: #3848f1;
 }
 
 .btn-card1 {
   align-self: flex-end;
-
 }
 
 .card2 button {
-  background-color: #EF43CF;
+  background-color: #ef43cf;
   color: wheat;
   border-radius: 2rem;
 }
@@ -501,7 +481,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.151);
 }
 
-
 .table_cont {
   border: 1px solid rgba(245, 245, 245, 0.034);
   background-color: #301c6a67;
@@ -512,7 +491,6 @@ nav {
   color: wheat;
   display: flex;
   justify-content: center;
-
 }
 
 table {
@@ -527,24 +505,21 @@ th {
   border-bottom: 1px solid rgba(245, 222, 179, 0) !important;
 }
 
-
 /* SERVICIOS DOS-------------------------------------------------- */
 
 .serviciosDos {
-  background-color: rgb(231, 231, 231);
+ 
 
-  background-size: cover;
-  background-blend-mode: darken;
-
-  min-height: 100vh;
-  font-family: 'Kanit', sans-serif;
-  position: relative;
-  z-index: 101 !important;
-  top:0;
+  
+  font-family: "Kanit", sans-serif;
+  position: relative !important;
+  z-index: 9 !important;
+  
 }
 
 .tit_apologia {
   margin-left: 100px;
+  margin-bottom: 0;
   width: 30%;
   color: #242323;
   font-size: 48px;
@@ -570,24 +545,26 @@ th {
 .servidiosDosImagenCont2 {
   display: flex;
   justify-content: center;
-
 }
 
 .serviciosDosImagen2 {
-  width: 201.8px;
-  height: 200.851px;
+  width: 300px;
+  
   margin-bottom: 0;
 }
 
 .serviciosDosImagen3 {
-  width: 199.7px;
-
+  width: 300px;
+  margin-bottom: 40px;
 }
 
 .serviciosDosImagen {
-  width: 550px;
+  width: 600px;
 
   object-fit: cover;
+  position: absolute;
+  top: 120px;
+  right: 50px;
 }
 
 @keyframes flotar {
@@ -611,7 +588,6 @@ th {
 .serviciosDosText {
   text-align: start;
 
-
   color: rgb(41, 41, 41);
 }
 
@@ -628,16 +604,20 @@ th {
 
 .tarjeta1 {
   border-radius: 19px;
- 
+
   flex-shrink: 0;
-  background: linear-gradient(45grad, rgba(244, 47, 54, 22%), rgba(15, 44, 194, 22%), rgba(29, 151, 46, 22%));
   display: flex;
-  box-shadow: 0px 3px 9px -2px rgba(43, 0, 0, 1);
+  background: linear-gradient(
+    45grad,
+    rgba(244, 47, 54, 21%),
+    rgba(15, 44, 194, 16%),
+    rgba(29, 151, 46, 11%)
+  );
+  box-shadow: 4px 9px 10px -8px rgba(43, 0, 0, 0.5);
 }
 
 .p2 {
-
-  color: rgba(0, 0, 0, 0.80);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 20px;
 
   line-height: 28px;
@@ -649,8 +629,6 @@ th {
 /* PORQUE.------------------------ */
 
 .porque_main {
-  background-color: rgb(233, 233, 233);
-
   background-size: cover;
   background-size: 170%;
   background-repeat: no-repeat;
@@ -664,103 +642,259 @@ th {
   color: rgb(20, 20, 20);
   position: relative;
   z-index: 5;
-  margin-bottom: 100px;
-
+  margin-bottom: 40px;
 }
 
 .porque_title {
-  font-family: 'Kanit', sans-serif;
-  margin-left: 60px;
+  font-family: "Kanit", sans-serif;
+  margin-left: 100px;
   color: rgb(41, 41, 41);
+  margin-bottom: 8px;
+}
+
+.porque_ex {
+  margin-left: 100px;
+  margin-top: 0;
 }
 
 .porque_flex {
   display: flex;
 
-  margin: 0 60px;
+  margin: 0 100px;
 }
 
 .porque_text {
-  margin-top: 40px;
-  width: 55%;
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  background: linear-gradient(
+    45grad,
+    rgba(244, 47, 54, 21%),
+    rgba(15, 44, 194, 16%),
+    rgba(29, 151, 46, 11%)
+  );
+  box-shadow: 4px 9px 10px -8px rgba(43, 0, 0, 0.5);
+
+  border-radius: 19px;
+  overflow: hidden;
+}
+
+.porque_text2 {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
+  padding: 20px;
+}
+.porque_text2 p {
+  margin: 0;
 }
 
 .porque_text p {
-  width: 90%;
 }
 
 .porque_text button {
   color: white;
-  width: 90%;
-  border-radius: 0;
+
+  border-radius: 8pxpx;
   height: 60px;
-  background: linear-gradient(45deg,
-      rgba(252, 36, 36, 0.938),
-      rgba(9, 9, 240, 0.993),
-      rgba(25, 160, 25, 0.973));
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
   filter: brightness(1.2);
   filter: opacity(80%);
   background-size: 200%;
   animation: cambiar 20s ease-in infinite;
-
 }
 
 .porque_grid {
   width: 100%;
-  gap: 20px;
+  gap: 50px 70px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-left: 8px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .porque_card {
-  background-color: rgba(197, 204, 206, 0.658);
-  border-radius: 1rem;
+  background: linear-gradient(
+    45grad,
+    rgba(244, 47, 54, 21%),
+    rgba(15, 44, 194, 16%),
+    rgba(29, 151, 46, 11%)
+  );
+  box-shadow: 4px 9px 10px -8px rgba(43, 0, 0, 0.5);
+  border-radius: 19px;
   position: relative;
 }
 
 .porque_card h4 {
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
+  font-weight: 700 !important;
 }
 
 .porque_card p {
-  width: 70%;
-  margin-left: 110px;
+  margin: 0;
+  padding: 8px 40px 16px 40px;
   font-size: 0.8rem;
   font-weight: 400 !important;
-
+  text-align: center;
 }
 
 .porque_card img {
   position: absolute;
   bottom: -16px;
-  left: -50px;
-  max-width: 180px;
+  left: -75px;
+  max-width: 130px;
 }
 
+/* RESPONSIVE BACK--------------------------------- */
+.responsive_back {
+  height: 80vh;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
 
-/* PREGUNTAS---------------------------------------- */
-
-.preguntas_main {
-  background-color: rgb(233, 233, 233);
-  position: relative;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+/* METODOLOGIA------------------------------------- */
+.metodologia_cont {
+  min-height: 80vh;
+}
+
+.metodologia_cont h2{
+  font-family: "kanit";
+}
+.metocard_cont {
+  margin: 0 100px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.metocard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 233px;
+  border-radius: 19px;
+  width: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  background-size: 300%;
+}
+.metocard2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 233px;
+  border-radius: 19px;
+  width: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  background-size: 300%;
+  background-position: 500px 0;
+}
+.metocard3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 233px;
+  border-radius: 19px;
+  width: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  background-size: 300%;
+  background-position: 400px 0;
+}
+
+.metocard4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 233px;
+  border-radius: 19px;
+  width: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  background-size: 300%;
+  background-position: 230px 0;
+}
+.metocard5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 233px;
+  border-radius: 19px;
+  width: 200px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  background-size: 400%;
+  background-position: 200px 0;
+}
+.actualizaciones_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0 120px 0;
+}
+.actualizaciones {
+  width: 780px;
+  height: 180px;
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
+  border-radius: 19px;
+}
+
+.actualizaciones h3{
+  text-align: center;
+}
+/* PREGUNTAS---------------------------------------- */
+
+.preguntas_main {
+
+ 
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .preguntas_main h2 {
   text-align: start;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   font-weight: 600;
-
 }
 
 .preguntas_botones {
@@ -770,16 +904,16 @@ th {
 }
 
 .preguntas_botones button {
+  color: #242323;
   text-align: start;
   width: 110%;
   background-color: rgba(245, 245, 245, 0.548);
   border: 1px solid rgba(0, 0, 0, 0.164);
   font-weight: 400;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
 .preguntas_group img {
-
   width: 50%;
   margin-left: 100px;
   object-fit: cover;
@@ -790,48 +924,55 @@ th {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin: 0 60px;
-
+  margin: 0 100px;
 }
+.preguntas_title{
 
+  margin-top: 0;
+}
 /* BANNER--------------------------------------------------- */
 
 .banner_main {
   color: whitesmoke;
   height: 80px;
   width: 100vw;
-  position: absolute;
-  top: 0;
   text-align: center;
-  background: linear-gradient(45deg,
-      rgba(252, 36, 36, 0.938),
-      rgba(9, 9, 240, 0.993),
-      rgba(25, 160, 25, 0.973));
+  background: linear-gradient(
+    45deg,
+    rgba(252, 36, 36, 0.938),
+    rgba(9, 9, 240, 0.993),
+    rgba(25, 160, 25, 0.973)
+  );
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-size: 200%;
   animation: cambiar 20s ease-in infinite;
+  margin: 100px 0;
 }
 
+.idea{
+  font-size: 1rem;
+  font-weight: 300;
+}
 /* Futer ---------------------------------------- */
 
-
 .futer_main {
-
-  background-image: url("/public/footerfondo.svg");
-  background-blend-mode: luminosity;
+  background-image: url("../public/preciosimg.png");
+background-size: fill;
   display: flex;
   align-items: center;
   min-height: 100vh;
   position: relative;
   z-index: 999;
-
 }
 
 .form {
 
-  background-color: #acaaaa69;
+background: linear-gradient(232deg, rgba(172, 170, 170, 0.11) 69.36%, rgba(172, 170, 170, 0.30) 79.87%, rgba(172, 170, 170, 0.00) 97.52%);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+backdrop-filter: blur(108px);
+
   padding: 60px;
   border-radius: 1rem;
   display: flex;
@@ -839,7 +980,6 @@ th {
   width: 100%;
   margin: 40px 80px;
   position: relative;
-
 }
 
 .formcontacto {
@@ -860,11 +1000,7 @@ th {
 }
 
 .form_arriba label {
-
-
   border-radius: 1rem;
-
-
 }
 
 .form_arriba {
@@ -895,8 +1031,6 @@ th {
 .form_butons button {
   background-color: #40414593 !important;
   border: 1px solid rgba(245, 245, 245, 0.158);
-
-
 }
 
 .form textarea {
@@ -915,7 +1049,6 @@ th {
 .form input {
   height: 38px;
   border-radius: 4px;
-
 }
 
 .form button {

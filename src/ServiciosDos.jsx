@@ -7,7 +7,8 @@ export const ServiciosDos = () => {
             <div className='serviciosDosHead'>
                 <div className='serviciosDosText'>
                     <div className='tarjeta1'>
-                        <p className='p2'>Somos los únicos desarrolladores comprometidos en hacer que la web sea accesible para todos los usuarios, sin importar su presupuesto.</p>
+                        <p className='p2'>Somos un equipo de desarrolladores comprometidos en hacer que la web sea accesible para todos.
+Creemos en romper barreras y brindar oportunidades a emprendedores en sus distintas etapas.</p>
                     </div>
                 </div>
                 <div className='servidiosDosImagenCont'>
@@ -20,7 +21,7 @@ export const ServiciosDos = () => {
                 </div>
                 <div className='serviciosDosText'>
                     <div className='tarjeta1'>
-                        <p className='p2'>Poder vender en la web no es dificil y cada vez hay mas formas de hacerlo, pero aun nada se compara con tener un sitio a tu medida donde esta el 100% de los beneficios.</p>
+                        <p className='p2'>Poder vender en la web no es difícil y cada vez hay mas formas de hacerlo, pero aun nada se compara con tener un sitio a tu medida donde están todos  los beneficios.</p>
                     </div>
                 </div>
             </div>

@@ -6,6 +6,9 @@ import { ServiciosDos } from "./ServiciosDos";
 import { Porque } from "./Porque";
 import { Preguntas } from "./Preguntas";
 import { Futer } from "./Futer";
+import { Responsive } from "./Responsive";
+import { Metodologia } from "./Metodologia";
+import { Banner } from "./Banner";
 
 
 function App() {
@@ -113,8 +116,11 @@ function App() {
       </div>
       <ServiciosDos></ServiciosDos>
       <Porque></Porque>
-      <Planes></Planes>
+      <Responsive></Responsive>
+      <Metodologia></Metodologia>
+      <Banner></Banner>
       <Preguntas></Preguntas>
+      <Planes></Planes>
       <Futer></Futer>
     </>
   )

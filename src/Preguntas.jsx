@@ -15,7 +15,7 @@ export const Preguntas = () => {
         </div>
         <img src="/preguntas.svg" alt="" />
       </div>
-      <Banner></Banner>
+    
     </div>
   )
 }
