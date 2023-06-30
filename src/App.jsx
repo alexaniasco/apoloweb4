@@ -9,6 +9,7 @@ import { Futer } from "./Futer";
 import { Responsive } from "./Responsive";
 import { Metodologia } from "./Metodologia";
 import { Banner } from "./Banner";
+import ScrollReveal from 'scrollreveal';
 
 
 function App() {
@@ -43,7 +44,21 @@ function App() {
     };
   }, []);
 
-
+  useEffect(() => {
+    const sr = ScrollReveal();
+  
+    sr.reveal('.elemento-animado', {
+      delay: 200,
+      distance: '50px',
+      duration: 1000,
+      easing: 'ease-out',
+      origin: 'bottom',
+      reset: true,
+      scale: 1,
+      viewFactor: 0,
+    });
+  }, []);
+  
 
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);

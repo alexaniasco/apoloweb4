@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Porque = () => {
     return (
-        <div className='porque_main' id='uno'>
+        <div className='porque_main elemento-animado' id='uno'>
             <div>
                 <h1 className='porque_title' style={{ fontSize: "52px" }}>Tener tu sitio en la web</h1>
                 <h4 className='porque_ex' style={{ fontSize: "22px", fontWeight: "300" }}>≠ tener éxito en la web.</h4>
@@ -11,36 +11,40 @@ export const Porque = () => {
             <div className='porque_flex'>
                 <div className='porque_grid'>
                     <div className='porque_card'>
-                        <h4>Redes y planeamiento</h4>
-                        <p> Maximiza tu presencia en línea y convierte visitantes en clientes leales con una estrategia acorde a tu publico.</p>
+                        <h4>Propuesta de Valor</h4>
+                        <p>Todo proyecto tiene una característica única que lo enriquece. Trabajarla con un analicis previo del mercado es fundamental.</p>
                         
                         <img src="/p1.svg" alt="" />
                     </div>
                     <div className='porque_card'>
                         <h4>Posicionamiento en Google
                         </h4>
-                        <p>Aumenta la visibilidad de tu página web. Destaca en los resultados de búsqueda y atrae a más clientes.</p>
+                        <p>Hay una jerarquía en los sitios web que va mas allá de la mejor publicidad o estrategia.
+Su código fuente debe ser optimo y escalable.</p>
                         <img src="/p2.svg" alt="" />
                     </div>
                     <div className='porque_card'>
                         <h4>Mantenimiento y optimizacion.
                         </h4>
-                        <p>Las tecnologias avanzan constantemente. No te quedes atras! Mejora su rendimiento, velocidad y seguridad.</p>
+                        <p>No quedarte atrás en las fechas clave de ventas y darle a tus clientes las ultimas noticias en una estructura solida desde los cimientos permite dar grandes saltos.</p>
                         <img src="/p3.svg" alt="" />
                     </div>
                     <div className='porque_card'>
-                        <h4>Adaptacion a todo dispositivo
+                        <h4>Adaptacion
                         </h4>
-                        <p>Haz que tu página web se adapte a todos los dispositivos. Brinda una experiencia perfecta a tus usuarios en computadoras, tablets y smartphones.</p>
+                        <p>Ser adaptable ya no es una opción;  dar el mejor servicio tampoco lo es.  Se accesible tanto en computadoras, celulares y tablets. 
+¡El diseño responsivo es tendencia! </p>
                         <img src="/p4.svg" alt="" />
                     </div>
                 <div className='porque_text'>
                  <div className='porque_text2'>
                  <p>
-                        Por eso, diseñamos servicios que optimizaran  los puntos clave para tu pagina.
-                        Destaca entre la competencia, aumenta tu visibilidad y brinda una experiencia excepcional a tus usuarios.
-                    </p>
-                    <p>¿Listo para destacar?</p>
+                 Diseñamos una página web estratégica y única pensada especialmente para tu
+producto o servicio.
+                </p>
+                <p>Trabajamos en los cuatro factores fundamentales para maximizar el impacto y el alcance.</p>
+
+                    <p>¿Listo para avanzar?</p>
                     <button>Empieza el cambio!</button>
                  </div>
                   

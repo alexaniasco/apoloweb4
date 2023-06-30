@@ -26,7 +26,7 @@ export const Futer = () => {
         <label>Explayate</label>
         <textarea ></textarea>
         <button>Enviar</button>
-
+<img className='fcamara' src="/fcamara.svg" alt="" />
       </div>
 
     </div>
