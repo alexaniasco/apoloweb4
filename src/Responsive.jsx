@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 export const Responsive = () => {
   return (
-    <div className='responsive_back'>
-<h1>Para todos los dispositivos</h1>
+    <div className="responsive_back">
+      <h3>Para todos los dispositivos</h3>
 
-<img src="/pc_responsive.svg" alt="" />
-
+      <img src="/pc_responsive.svg" alt="" />
     </div>
-  )
-}
+  );
+};
