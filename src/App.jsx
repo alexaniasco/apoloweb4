@@ -11,7 +11,7 @@ import ScrollReveal from "scrollreveal";
 import { Extras } from "./Extras";
 import { Especialistas } from "./Especialistas";
 import { Footer } from "./Footer";
-import { FooterFinal } from "./footerFinal";
+import { FooterFinal } from "./FooterFinal";
 
 function App() {
   const [navbarColor, setNavbarColor] = useState("transparent");
