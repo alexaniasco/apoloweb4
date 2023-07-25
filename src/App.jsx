@@ -8,7 +8,6 @@ import { Responsive } from "./Responsive";
 import { Metodologia } from "./Metodologia";
 import { Banner } from "./Banner";
 import ScrollReveal from "scrollreveal";
-import FrameComponent from "./FrameComponent";
 import { Extras } from "./Extras";
 import { Especialistas } from "./Especialistas";
 import { Footer } from "./Footer";
