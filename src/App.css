@@ -16,17 +16,18 @@ nav {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 60px;
+  height: auto;
   align-items: center;
-  justify-content: space-evenly;
   z-index: 999;
+  padding: 18px;
 }
 
 .menu {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 0 48px;
 }
 
 .menu li {
@@ -39,11 +40,6 @@ nav {
   text-align: center;
   background-color: rgba(255, 255, 255, 0);
   border: 1px white solid;
-}
-
-.logo {
-  width: 100%;
-  margin-left: 34px;
 }
 
 * {
@@ -65,6 +61,9 @@ nav {
 }
 
 @media (max-width: 1000px) {
+  span {
+    font-size: 40px !important;
+  }
   .preciosplanes1 {
     display: none !important;
   }
@@ -79,7 +78,9 @@ nav {
   }
 
   .porque_grid {
-    display: inline !important;
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px 0;
   }
 
   .porque_flex {
@@ -101,7 +102,6 @@ nav {
   }
 
   .serviciosDos {
-    margin-bottom: 80px;
   }
 }
 
@@ -109,11 +109,29 @@ nav {
   font-family: "Kanit", sans-serif;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   nav {
     flex-direction: column;
     width: 100%;
     display: none;
+  }
+  .serviciosDos {
+    padding: 16px 40px !important;
+  }
+
+  .porque_main {
+    padding: 40px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .porque_main {
+    padding: 16px 40px;
   }
 
   .serviciosDosText p {
@@ -135,16 +153,19 @@ nav {
   }
 
   .serviciosDosHead {
-    display: block !important;
-    margin: 0 40px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .serviciosDosImagen {
-    width: 120% !important;
+    width: 260px !important;
   }
 
   .servidiosDosImagenCont {
-    margin: 80px 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100%;
   }
 
   .containerr {
@@ -156,11 +177,17 @@ nav {
   }
 
   .containerr h1 {
-    margin-left: 20px !important;
+    margin-left: 0 !important;
+    font-size: 70px;
+    width: 100%;
+  }
+  .titulo {
+    width: 100%;
+    text-align: center;
   }
 
   .img_landing {
-    width: 100vw !important;
+    display: none;
   }
 
   .img_landing img {
@@ -171,7 +198,6 @@ nav {
   }
 
   .porque_title {
-    margin: 40px 20px !important;
   }
 
   .table_cont {
@@ -183,12 +209,10 @@ nav {
   }
 
   .porque_flex {
-    margin: 20px 20px !important;
   }
 
   .porque_card {
-    margin: 40px 4px !important;
-    padding: 8px 0px;
+    height: auto;
   }
 
   .preguntas_title {
@@ -515,31 +539,41 @@ th {
 
 .serviciosDos {
   font-family: "Kanit", sans-serif;
-  position: relative !important;
-  z-index: 9 !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 100px;
 }
 
 .tit_apologia {
-  width: 55%;
   color: #242323;
-  margin-left: 100px;
+}
+
+.p2 {
+  margin: 0;
+}
+
+.apologia_contenedor_title {
+  width: fit-content;
+  max-width: 100%;
 }
 .apologia {
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .serviciosDosHead {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
 
-  align-items: center;
-  margin: 0 100px;
-  margin-top: 50px;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .servidiosDosImagenCont {
   display: flex;
-  justify-content: center;
-  margin-bottom: 100px;
+  justify-content: flex-start;
 }
 
 .servidiosDosImagenCont2 {
@@ -559,11 +593,9 @@ th {
 }
 
 .serviciosDosImagen {
-  width: 500px;
+  max-width: 400px;
+  height: auto;
   object-fit: cover;
-  position: absolute;
-  top: 0;
-  right: 50px;
 }
 
 .circle {
@@ -628,30 +660,29 @@ th {
   background-position-x: -200px;
   background-position-y: -420px;
 
-  min-height: 100vh;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: rgb(20, 20, 20);
   position: relative;
   z-index: 5;
-  margin-bottom: 80px;
+  padding: 40px 100px;
+  gap: 24px 0;
 }
 
 .porque_title {
-  margin-left: 100px;
   color: rgb(41, 41, 41);
 }
 
 .porque_ex {
-  margin-left: 100px;
-  margin-top: 0;
+  margin: 0;
 }
 
 .porque_flex {
   display: flex;
-
-  margin: 0 100px;
+  width: 100%;
 }
 
 .porque_text {
@@ -721,7 +752,7 @@ th {
   );
   box-shadow: 4px 9px 8px 0px rgba(0, 0, 0, 0.15);
   width: 100%;
-  height: 163px;
+  height: auto;
   text-align: left;
   font-size: 20px;
   color: rgba(11, 11, 11, 0.6);
@@ -730,7 +761,7 @@ th {
 }
 
 .porque_card_in {
-  height: 163px;
+  height: auto;
   border-radius: 17.6px;
   background: linear-gradient(
     39deg,
@@ -740,6 +771,8 @@ th {
   );
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15) inset;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .porque_card h4 {
@@ -768,12 +801,13 @@ th {
   font-family: "SF PRO";
   text-align: left;
   display: inline-block;
-  width: 236px;
+  width: 70%;
 }
 
 .porque_card_in button {
   width: 100%;
-  height: 66px;
+  min-height: 66px;
+  height: auto;
 }
 
 .butons_action {
@@ -781,6 +815,8 @@ th {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  height: 100%;
+  justify-content: space-evenly;
 }
 .buton_secundary {
   font-size: 25px;
@@ -835,8 +871,9 @@ th {
 .porque_card img {
   position: absolute;
   bottom: 0;
-
-  max-width: 250px;
+  right: 0px;
+  object-fit: fill;
+  max-width: 150px;
 }
 
 .lineasub {
@@ -848,7 +885,7 @@ th {
 
 /* RESPONSIVE BACK--------------------------------- */
 .responsive_back {
-  height: 80vh;
+  height: auto;
   background: linear-gradient(
     45deg,
     rgba(252, 36, 36, 0.938),
@@ -859,10 +896,25 @@ th {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 100px;
 }
 
 .responsive_back h3 {
-  margin: 20px 0;
+  margin: 0;
+}
+
+.responsive_back img {
+  max-width: 500px;
+}
+.responsive_cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  gap: 24px 0;
+  text-align: center;
 }
 
 /* EXTRA CARDS------------------------------- */

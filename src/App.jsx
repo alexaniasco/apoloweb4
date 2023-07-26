@@ -93,7 +93,6 @@ function App() {
   return (
     <>
       <nav style={{ backgroundColor: navbarColor, boxShadow: sombra }}>
-        <div className="logo" style={{ color: textColor }}></div>
         <div className="menu" style={{ color: textColor }}>
           <a style={{ color: textColor }} href="#uno">
             {" "}
