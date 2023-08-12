@@ -116,11 +116,17 @@ nav {
     display: none;
   }
   .serviciosDos {
-    padding: 16px 40px !important;
+    padding: 10px 20px !important;
   }
 
   .porque_main {
-    padding: 40px !important;
+    padding: 10px 20px !important;
+  }
+  .responsive_back {
+    padding: 10px 20px !important;
+  }
+  .responsive_cont h3 {
+    font-size: 30px;
   }
 }
 
